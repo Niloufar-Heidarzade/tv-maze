@@ -1,0 +1,165 @@
+body {
+  background-color: rgb(38, 38, 65);
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.tvshow-title {
+  color: rgb(38, 206, 38);
+}
+.show {
+  color: white;
+}
+#searchBar ,#searchBar2{
+  background: url("./search-icon-2044x2048-psdrpqwp.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 187px 4px;
+  background-color: rgb(87, 87, 87);
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:white;
+}
+#searchBar::placeholder  , #searchBar2::placeholder {
+  color: rgba(255, 255, 255, 0.357);
+}
+#searchButton img ,#searchButton2 img {
+  width: 30px;
+}
+#searchButton  , #searchButton2 {
+  background-color: rgb(38, 38, 65);
+  border: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputbox {
+  display: flex;
+  align-items: center;
+}
+#headerImage img {
+  border-color: white;
+  border-width: 2px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+#separator {
+  margin-top: 18px;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(87, 87, 87);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+#separator p {
+  color: white;
+}
+#container {
+  margin-top:20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; 
+  transition: transform 0.2s;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card h3, .card p {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 6px 6px rgb(0, 0, 0);
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 2; 
+}
+.card h3 {
+  bottom: 70px;
+}
+.card p.genre {
+  bottom: 40px;
+}
+.card p.imdb {
+  bottom: 20px;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.587)); 
+  z-index: 1; 
+}
+.episodeCard{
+  width:200px;
+  height:300px;
+  background-color: rgb(87, 87, 87);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; 
+
+}
+.episodeCard img{
+  width:100%;
+  height:65%;
+  object-fit:cover;
+}
+.cardBottom{
+  display:fixed;
+}
+.playButton{
+  background-color: rgb(87, 87, 87);
+  border:none;
+  width:40px;
+  height:48px;
+  display:absolute;
+  
+}
+.episodeCard {
+  position: relative;
+}
+.summaryDiv {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  pointer-events: none; 
+  display: -webkit-box;
+}
+
